@@ -1,6 +1,6 @@
 1
 
-- ##compile code;
+- ## compile code;
   javac com/neco/Main.java
-- ##run bit code;
+- ## run bit code;
   src java com.neco.Main
