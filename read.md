@@ -12,3 +12,11 @@ float myFloatNum = 5.99f; // Floating point number
 char myLetter = 'D'; // Character
 boolean myBool = true; // Boolean
 String myText = "Hello"; // String
+
+## Shorthand Reassignment
+- +=	x += 3	x = x + 3	
+- -=	x -= 3	x = x - 3	
+- *=	x *= 3	x = x * 3	
+- /=	x /= 3	x = x / 3
+
+
