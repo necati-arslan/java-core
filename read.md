@@ -28,6 +28,10 @@ char[] helloArray = { 'h', 'e', 'l', 'l', 'o', '.' };
 String helloString = new String(helloArray);
 System.out.println(helloString);
 ```
+## How to work primitive and reference
+<img src="/assets/stack.png" alt="Employee data" title="Employee Data title">
+
+
 
 
 
