@@ -29,8 +29,7 @@ String helloString = new String(helloArray);
 System.out.println(helloString);
 ```
 ## How to work primitive and reference
-
-tt
+<img src="/assets/stack.png" alt="Employee data" title="Employee Data title">
 
 
 
