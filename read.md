@@ -19,6 +19,19 @@ String myText = "Hello"; // String
 - *=	x *= 3	x = x * 3	
 - /=	x /= 3	x = x / 3
 
+## Concatenate Strings in Java
+String result = str1 + str2;
+
+## how to work string in java
+```
+char[] helloArray = { 'h', 'e', 'l', 'l', 'o', '.' };
+String helloString = new String(helloArray);
+System.out.println(helloString);
+```
+## How to work primitive and reference
 <img src="/assets/stack.png" alt="Employee data" title="Employee Data title">
+
+
+
 
 
