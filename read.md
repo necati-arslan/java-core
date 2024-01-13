@@ -19,4 +19,6 @@ String myText = "Hello"; // String
 - *=	x *= 3	x = x * 3	
 - /=	x /= 3	x = x / 3
 
+<img src="/assets/stack.png" alt="Employee data" title="Employee Data title">
+
 
