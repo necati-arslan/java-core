@@ -6,7 +6,7 @@ public class Main {
 	// write your code here
         char[] helloArray = { 'h', 'e', 'l', 'l', 'o', '.' };
         String helloString = new String(helloArray);
-        System.out.println(helloArray);
+        System.out.println(helloArraygi);
 
 
     }

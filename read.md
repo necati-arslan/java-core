@@ -31,6 +31,15 @@ System.out.println(helloString);
 ## How to work primitive and reference
 <img src="/assets/stack.png" alt="memory stack">
 
+## Array
+```
+String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+int[] myNum = {10, 20, 30, 40};
+
+```
+- Primitives the default value for arrays is zero 
+- for String array default value is 'nnull'
+
 
 
 
