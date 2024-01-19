@@ -158,3 +158,96 @@ public class Main {
   }
 }
 ```
+
+## What OOP?
+- Object-Oriented Programming (OOP) is a programming approach that uses objects to structure and organize code. 
+- Objects are instances of classes, which contain data and the methods that operate on that data
+- OOP is based on the principles of encapsulation, inheritance, and polymorphism,
+
+## Creating Object
+
+```
+public class Main {
+  int x = 5;
+
+  public static void main(String[] args) {
+    Main myObj1 = new Main();  // Object 1
+    Main myObj2 = new Main();  // Object 2
+    System.out.println(myObj1.x);
+    System.out.println(myObj2.x);
+  }
+}
+```
+
+## Diffirece Static vs. Public
+-  we created a static method, which means that it can be accessed without creating an object of the class, unlike public, which can only be accessed by objects:
+
+```
+public class Main {
+  // Static method
+  static void myStaticMethod() {
+    System.out.println("Static methods can be called without creating objects");
+  }
+
+  // Public method
+  public void myPublicMethod() {
+    System.out.println("Public methods must be called by creating objects");
+  }
+
+  // Main method
+  public static void main(String[] args) {
+    myStaticMethod(); // Call the static method
+    // myPublicMethod(); This would compile an error
+
+    Main myObj = new Main(); // Create an object of Main
+    myObj.myPublicMethod(); // Call the public method on the object
+  }
+}
+```
+
+## Java Constructors
+- A constructor in Java is a special method that is used to initialize objects.
+-  It can be used to set initial values for object attributes:
+  ```
+// Create a Main class
+public class Main {
+  int x;
+
+  // Create a class constructor for the Main class
+  public Main() {
+    x = 5;
+  }
+
+  public static void main(String[] args) {
+    Main myObj = new Main();
+    System.out.println(myObj.x);
+  }
+}
+
+```
+- Note that the constructor name must match the class name, and it cannot have a return type (like void).
+  
+````
+//filename: Main.java
+public class Main {
+  int modelYear;
+  String modelName;
+
+  public Main(int year, String name) {
+    modelYear = year;
+    modelName = name;
+  }
+
+  public static void main(String[] args) {
+    Main myCar = new Main(1969, "Mustang");
+    System.out.println(myCar.modelYear + " " + myCar.modelName);
+  }
+}
+
+---------
+
+  public Main(int year, String name) {
+    modelYear = year;
+   String modelName = name;
+  } // we get error 
+````
