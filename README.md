@@ -251,3 +251,36 @@ public class Main {
    String modelName = name;
   } // we get error 
 ````
+# Java Modifiers
+meaning that it is used to set the access level for classes, attributes, methods and constructors.
+
+##Access Modifiers
+
+- Public; The class is accessible by any other class	
+
+- Private: The code is only accessible within the declared class	
+
+## Non-Access Modifiers
+- For classes, you can use either final or abstract:
+- abstract;The class cannot be used to create objects
+
+## Java Encapsulation
+- meaning of Encapsulation, is to make sure that "sensitive" data is hidden from users.
+
+```
+public class Person {
+  private String name; // private = restricted access
+
+  // Getter
+  public String getName() {
+    return name;
+  }
+
+  // Setter
+  public void setName(String newName) {
+    this.name = newName;
+  }
+}
+```
+
+
