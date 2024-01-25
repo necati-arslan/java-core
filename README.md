@@ -283,4 +283,96 @@ public class Person {
 }
 ```
 
+# Java Packages
 
+- To use a class or a package from the library, you need to use the import keyword:
+  
+```
+import package.name.Class;   // Import a single class
+import package.name.*;   // Import the whole package
+---
+import java.util.Scanner;
+//In the example above, java.util is a package, while Scanner is a class of the java.util package.
+  
+
+```
+
+# Java Inheritance
+
+- subclass (child) - the class that inherits from another class
+- superclass (parent) - the class being inherited from
+
+```
+class Vehicle {
+  protected String brand = "Ford";        // Vehicle attribute
+  public void honk() {                    // Vehicle method
+    System.out.println("Tuut, tuut!");
+  }
+}
+
+class Car extends Vehicle {
+  private String modelName = "Mustang";    // Car attribute
+  public static void main(String[] args) {
+
+    // Create a myCar object
+    Car myCar = new Car();
+
+    // Call the honk() method (from the Vehicle class) on the myCar object
+    myCar.honk();
+
+    // Display the value of the brand attribute (from the Vehicle class) and the value of the modelName from the Car class
+    System.out.println(myCar.brand + " " + myCar.modelName);
+  }
+}
+```
+- Polymorfism
+
+```
+class Animal {
+  public void animalSound() {
+    System.out.println("The animal makes a sound");
+  }
+}
+
+class Pig extends Animal {
+  public void animalSound() {
+    System.out.println("The pig says: wee wee");
+  }
+}
+
+class Dog extends Animal {
+  public void animalSound() {
+    System.out.println("The dog says: bow wow");
+  }
+}
+
+class Main {
+  public static void main(String[] args) {
+    Animal myAnimal = new Animal();  // Create a Animal object
+    Animal myPig = new Pig();  // Create a Pig object
+    Animal myDog = new Dog();  // Create a Dog object
+    myAnimal.animalSound();
+    myPig.animalSound();
+    myDog.animalSound();
+  }
+}
+```
+
+## Enums
+
+- An enum is a special "class" that represents a group of constants (unchangeable variables, like final variables).
+  
+```
+public class Main {
+  enum Level {
+    LOW,
+    MEDIUM,
+    HIGH
+  }
+
+  public static void main(String[] args) {
+    Level myVar = Level.MEDIUM; 
+    System.out.println(myVar);
+  }
+}
+```
