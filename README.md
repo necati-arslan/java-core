@@ -376,3 +376,50 @@ public class Main {
   }
 }
 ```
+
+## Java Date and Time
+- Java does not have a built-in Date class, but we can import the java.time package to work with the date and time API.
+```
+√import java.time.LocalDate; // import the LocalDate class
+ 
+ public class Main {
+   public static void main(String[] args) {
+     LocalDate myObj = LocalDate.now(); // Create a date object
+     System.out.println(myObj); // Display the current date
+   }
+ }
+```
+
+## Diffirence Array & ArrayList
+
+- The difference between a built-in array and an ArrayList in Java, is that the size of an array cannot be modified 
+```
+import java.util.ArrayList;
+
+public class Main {
+  public static void main(String[] args) {
+    ArrayList<String> cars = new ArrayList<String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    cars.add("Mazda");
+    System.out.println(cars);
+  }
+}
+```
+
+## Java Exceptions - Try...Catch
+```
+Example
+public class Main {
+  public static void main(String[ ] args) {
+    try {
+      int[] myNumbers = {1, 2, 3};
+      System.out.println(myNumbers[10]);
+    } catch (Exception e) {
+      System.out.println("Something went wrong.");
+    }
+  }
+}
+
+```
